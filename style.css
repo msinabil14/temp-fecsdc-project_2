@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #222;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+main{
+  max-width: 950px;
+  margin: 20px auto;
+}
+
+.product{
+  display: flex;
+  gap: 30px;
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product img{
+  width: 50%;
+  height: auto;
+  border-radius: 8px;
+  align-self: flex-start;
+}
+
+.info{
+  width: 50%;
+}
+
+h1{
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.rating{
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.stars{
+  color: #e0a000;
+  letter-spacing: 2px;
+  margin-right: 5px;
+}
+
+.price{
+  font-size: 28px;
+  font-weight: bold;
+  color: #1f6f5c;
+  margin-bottom: 15px;
+}
+
+.description{
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.sizes{
+  border: none;
+  margin-bottom: 25px;
+}
+
+.sizes legend{
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.sizes input{
+  position: absolute;
+  opacity: 0;
+}
+
+.sizes label{
+  display: inline-block;
+  width: 50px;
+  padding: 10px 0;
+  margin-right: 8px;
+  text-align: center;
+  background-color: white;
+  border: 2px solid #999;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.sizes label:hover{
+  border-color: #1f6f5c;
+}
+
+.sizes input:checked + label{
+  background-color: #1f6f5c;
+  border-color: #1f6f5c;
+  color: white;
+}
+
+.buy-btn {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  background-color: #1f6f5c;
+  color: white;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.buy-btn:hover{
+  background-color: #17594a;
+}
+
+.order-msg {
+  display: none;
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #dff3e8;
+  color: #14532d;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 6px;
+}
+
+.buy-btn:focus ~ .order-msg{
+  display: block;
+}
+
+@media (max-width: 700px){
+  body{
+    padding: 10px;
+  }
+
+  .product{
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .product img,
+  .info{
+    width: 100%;
+  }
+
+  h1{
+    font-size: 26px;
+  }
+}
