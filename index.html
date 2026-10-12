@@ -1,11 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Detail Page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trail Runner Shoe</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+
+  <main>
+    <article class="product">
+
+      <img
+        src="https://s3.amazonaws.com/www.irunfar.com/wp-content/uploads/2025/10/20163642/best-lightweight-trail-running-shoe-The-North-Face-Summit-Vectic-Sky-2.jpg"
+        alt="Trail Runner Shoe product photo">
+
+      <div class="info">
+        <h1>Trail Runner Shoe</h1>
+
+        <p class="rating">
+          <span class="stars" aria-hidden="true">★★★★☆</span>
+          4.5 / 5
+        </p>
+
+        <p class="price">$59.99</p>
+
+        <p class="description">
+          A light shoe built for muddy trails and rocky paths. It has a grippy sole,
+          a breathable top and a soft cushion that keeps your feet comfortable on long runs.
+        </p>
+
+        <fieldset class="sizes">
+          <legend>Select size</legend>
+
+          <input type="radio" name="size" id="size-s" value="S">
+          <label for="size-s">S</label>
+
+          <input type="radio" name="size" id="size-m" value="M">
+          <label for="size-m">M</label>
+
+          <input type="radio" name="size" id="size-l" value="L">
+          <label for="size-l">L</label>
+
+        </fieldset>
+
+        <button type="button" class="buy-btn">Buy Now</button>
+
+        <p class="order-msg">Order placed.</p>
+      </div>
+
+    </article>
+  </main>
+
 </body>
 </html>
